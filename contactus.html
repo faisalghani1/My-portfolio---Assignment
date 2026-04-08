@@ -11,54 +11,62 @@
       <nav>
         <a href="./index.html">Home</a>
         <a href="./projects.html">Projects</a>
-        <a href="./contactus.html">Conact us</a>
+        <a href="./contactus.html">Contact us</a>
       </nav>
     </header>
 
     <main>
       <section>
-        <h2>Contact us</h2>
-        <a href="tel:030000000"> Tel: +92 3xx xxxxxxxx</a><br />
-        <a href="mailto:abc@gmail.com"> leave us a mail: abc@gmail.com</a>
+        <h2>Contact Us</h2>
 
-        <div class="container">
-          <form action="action_page.php">
-            <label for="fname">First Name</label>
-            <input
-              type="text"
-              id="fname"
-              name="firstname"
-              placeholder="Your name.."
-            />
+        <a href="tel:+923000000000">Tel: +92 300 0000000</a><br />
+        <a href="mailto:abc@gmail.com">Email: abc@gmail.com</a>
 
-            <label for="lname">Last Name</label>
-            <input
-              type="text"
-              id="lname"
-              name="lastname"
-              placeholder="Your last name.."
-            />
+        <br /><br />
 
-            <label for="country">Country</label>
+        <fieldset>
+          <legend>Send us a Message</legend>
+
+          <form>
+            <label for="fname">First Name</label><br />
+            <input type="text" id="fname" name="firstname" placeholder="Your name.." required />
+            <br /><br />
+
+            <label for="lname">Last Name</label><br />
+            <input type="text" id="lname" name="lastname" placeholder="Your last name.." required />
+            <br /><br />
+
+            <label for="cell">Cell Number</label><br />
+            <input type="tel" id="cell" name="cell" placeholder="Your phone number..." required />
+            <br /><br />
+
+            <label for="email">Email</label><br />
+            <input type="email" id="email" name="email" placeholder="Your email address.." required />
+            <br /><br />
+
+            <label for="country">Country</label><br />
             <select id="country" name="country">
-              <option value="australia">Australia</option>
-              <option value="canada">Canada</option>
-              <option value="usa">USA</option>
+              <option value="Pakistan">Pakistan</option>
+              <option value="India">India</option>
+              <option value="Australia">Australia</option>
+              <option value="Canada">Canada</option>
+              <option value="USA">USA</option>
             </select>
+            <br /><br />
 
-            <label for="subject">Subject</label>
-            <textarea
-              id="subject"
-              name="subject"
-              placeholder="Write something.."
-              style="height: 200px"
-            ></textarea>
+            <label for="subject">Subject</label><br />
+            <textarea id="subject" name="subject" placeholder="Write your message.." rows="4" cols="30"></textarea>
 
-            <input type="submit" value="Submit" />
+            <br /><br />
+
+            <button type="submit">Submit</button>
           </form>
-        </div>
+        </fieldset>
       </section>
     </main>
+
+    <br />
+
     <footer>
       <p>&copy; 2026 My Portfolio</p>
     </footer>
